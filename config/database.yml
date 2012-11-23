@@ -11,8 +11,8 @@
 development:
   adapter: mysql2
   database: radio_ego
-  username: root
-  password: texmex
+  username: radioego
+  password: radioego
   host: localhost
   encoding: utf8
   socket: /tmp/mysql.sock
@@ -26,8 +26,8 @@ test: &test
   reconnect: false
   database: radio_ego_2_test
   pool: 5
-  username: root
-  password: texmex
+  username: radioego
+  password: raioego
   socket: /tmp/mysql.sock
 
 production:
