@@ -8,6 +8,12 @@ require "active_resource/railtie"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
+ENV["FACEBOOK_APP_ID"] = '222107374474034'
+ENV["FACEBOOK_SECRET"] = '74cae46ebb891e882a8416e0485835fb'
+
+ENV["TWITTER_APP_ID"] = 'lgIoqDNhvLTgzG38LYqw'
+ENV["TWITTER_SECRET"] = 'b01EoEfBRxO8MyCCeKJY74trUUuycYaVB3ApSmLPk'
+
 OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 
 if defined?(Bundler)
