@@ -17,7 +17,7 @@
   </div>
 
   <%= f.file_field :mp3 %>
-  <%= f.hidden_field :user_id, current_user.id %>
+  <%= f.hidden_field :user_id, { value: current_user.id} %>
 
   <div class="actions">
     <%= f.submit %>

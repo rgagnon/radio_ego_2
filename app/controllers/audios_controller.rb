@@ -1,4 +1,6 @@
 class AudiosController < ApplicationController
+  before_filter :authenticate_user
+
   # GET /audios
   # GET /audios.json
   def index
@@ -79,5 +81,9 @@ class AudiosController < ApplicationController
       format.html { redirect_to audios_url }
       format.json { head :no_content }
     end
+  end
+
+  def listen
+    @audio = Audio.find(params[:id])
   end
 end

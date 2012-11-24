@@ -1,2 +1,6 @@
 <h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<ul>
+  <% Audio.all.each do |audio|%>
+    <li><%= link_to audio.title, listen_path(id: audio.id) %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,15 @@
+<%= javascript_tag do %>
+    $(document).ready(function(){
+          $("#jquery_jplayer_1").jPlayer({
+            ready: function () {
+              $(this).jPlayer("setMedia", {
+                mp3: '<%= @audio.mp3.url %>'
+              });
+            },
+            swfPath: "/assets",
+            supplied: "mp3"
+          });
+    });
+<% end %>
+
+<%= render 'audios/jplayer' %>
