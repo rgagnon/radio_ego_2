@@ -8,6 +8,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'omniauth-google-apps'
+gem 'paperclip'
 
 # Gems used only for assets and not required
 # in production environments by default.

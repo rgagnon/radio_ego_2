@@ -1,4 +1,6 @@
 RadioEgo2::Application.routes.draw do
+  resources :audios
+
   get "home/index"
 
   match 'auth/:provider/callback', to: 'sessions#create'

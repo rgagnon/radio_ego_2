@@ -23,13 +23,13 @@
           <% if current_user %>
               <li>
                 <%= link_to "Sign out", signout_path, id: "sign_out" %>
-              </li>
+             </li>
+              <li>
+                <%= link_to "MP3", audios_path, id: "my_audios" %>
+             </li>
           <% else %>
               <li>
                 <%= link_to "Sign in with Twitter", "/auth/twitter", id: "sign_in" %>
-              </li>
-              <li>
-                <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
               </li>
           <% end %>
         </ul>
