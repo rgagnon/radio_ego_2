@@ -7,7 +7,7 @@ RadioEgo2::Application.routes.draw do
   match 'auth/failure', to: redirect('/')
   match 'signout', to: 'sessions#destroy', as: 'signout'
   match 'signin', to: 'sessions#new', as: 'signin'
-  match 'listen', to: 'audios#listen', as: 'listen'
+  match 'ego/listen/:id', to: 'audios#listen', as: 'listen'
 
   root to: 'home#index'
 end
