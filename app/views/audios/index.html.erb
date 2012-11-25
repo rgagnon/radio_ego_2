@@ -7,7 +7,6 @@
     <tr>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:mp3_file_name) %></th>
-      <th><%= model_class.human_attribute_name(:mp3_content_type) %></th>
       <th><%= model_class.human_attribute_name(:mp3_file_size) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -18,7 +17,6 @@
       <tr>
         <td><%= link_to audio.title, audio_path(audio) %></td>
         <td><%= audio.mp3_file_name %></td>
-        <td><%= audio.mp3_content_type %></td>
         <td><%= audio.mp3_file_size %></td>
         <td><%=l audio.created_at %></td>
         <td>
