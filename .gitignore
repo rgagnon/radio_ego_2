@@ -15,3 +15,7 @@
 /tmp
 
 .idea
+
+config/database.yml
+
+public/files/1/1
