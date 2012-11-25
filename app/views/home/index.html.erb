@@ -1,6 +1,6 @@
-<h1>Home#index</h1>
-<ul>
-  <% Audio.all.each do |audio|%>
+<h1><%= t('most_heard')%></h1>
+<ul class="most_heard">
+  <% @most_heard.each do |audio|%>
     <li><%= link_to audio.title, listen_path(id: audio.id) %></li>
   <% end %>
 </ul>

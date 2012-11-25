@@ -5,6 +5,8 @@ describe "audios/new" do
     assign(:audio, stub_model(Audio,
       :title => "MyString"
     ).as_new_record)
+
+    assign(:current_user, stub.as_null_object)
   end
 
   it "renders new audio form" do

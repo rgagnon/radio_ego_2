@@ -3,6 +3,7 @@ require 'spec_helper'
 describe "audios/edit" do
   before(:each) do
     @audio = assign(:audio, stub_model(Audio, :title => "MyString"))
+    assign(:current_user, stub.as_null_object)
   end
 
   it "renders the edit audio form" do

@@ -4,10 +4,12 @@ describe "audios/index" do
   before(:each) do
     assign(:audios, [
       stub_model(Audio,
-        :title => "Title"
+        :title => "Title",
+        created_at: Date.new
       ),
       stub_model(Audio,
-        :title => "Title"
+        :title => "Title",
+        created_at: Date.new
       )
     ])
   end

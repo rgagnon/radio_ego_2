@@ -31,7 +31,11 @@ describe AudiosController do
   # in order to pass any filters (e.g. authentication) defined in
   # AudiosController. Be sure to keep this updated too.
   def valid_session
-    {}
+    { }
+  end
+
+  before do
+    controller.stub(current_user: stub.as_null_object)
   end
 
   describe "GET index" do
